@@ -7,7 +7,7 @@ Example code to interact with [madeofnumbers/10](https://madeofnumbers.com/10/),
 
 <br>
 
-![Screenshot of 10 / CODEPLAY examples demo](./images/10-codeplay-screenshot.jpg)
+![Screenshot of 10 / CODEPLAY examples demo](./images/10-codeplay-demo-screenshot.jpg)
 
 ---
 
