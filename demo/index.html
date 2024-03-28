@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="10 / CODEPLAY  : write code to solve puzzles" />
+  <title>10 / CODEPLAY examples demo</title>
+  <link rel="stylesheet" type="text/css" href="demo.css" />
+
+  <!-- madeofnumbers.com/10 Mon10 object -->
+  <script src="https://madeofnumbers.com/10/mon10-latest.min.js"></script>
+  
+  <!-- 10 / CODEPLAY example scripts -->
+  <script src="demo.js"></script>
+  <script src="../examples/grid-summary/mon10-codeplay-example-grid-summary.js"></script>
+  <script src="../examples/random-moves/mon10-codeplay-example-random-moves.js"></script>
+
+  <script>
+
+    let mon10;
+    window.onload = () => {
+
+      // ===== create Mon10 object =====
+      mon10 = new Mon10(document.getElementById("panel-mon10"));
+
+      // ===== add 10 / CODEPLAY examples demo =====
+      addCodeplayExamplesDemo(document.getElementById("panel-codeplay-examples-demo"));
+    }
+
+  </script>
+
+</head>
+<body>
+
+  <!-- element for Mon10 object to attach to -->
+  <div id="panel-mon10" class="panel mon10"></div>
+
+  <div class="panel demo">
+    
+    <!-- element for addCodeplayExamplesDemo() to attach to -->
+    <div id="panel-codeplay-examples-demo" class="wrapper"></div>
+  </div>
+
+</body>

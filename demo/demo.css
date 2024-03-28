@@ -1,0 +1,106 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  color: #555;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+hr {
+  margin: 2rem 0;
+  color: #ddd;
+}
+
+p {
+  line-height: 1.25rem;
+}
+
+p.small {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.panel {
+  position: fixed;
+  height: 100vh;
+}
+
+.panel.mon10 {
+  left: 0;
+  width: calc(100vh * 0.5625);
+  overscroll-behavior-x: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.panel.demo {
+  right: 0;
+  width: calc(100vw - (100vh * 0.5625));
+  font-size: 16px;
+  font-family: sans-serif;
+  overflow-y: scroll;
+}
+
+.panel .wrapper {
+  padding: 1rem;
+}
+
+.example {
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 0.125rem 0;
+  padding: 0.5rem;
+  width: calc(100% - 1rem);
+  background: #fff;
+}
+
+.example button {
+  margin: 0 0.5rem 0 0;
+  padding: 0 0.65rem;
+  height: 1.2rem;
+  font-size: 0.65rem;
+}
+
+.example .name {
+  padding-right: 0.5rem;
+  width: 50%;
+  max-width: 18rem;
+  text-align: right;
+  color: #888;
+}
+
+.example .result {
+  font-weight: bold;
+}
+
+.example .result em {
+  font-style: normal;
+  font-weight: normal;
+  color: #999;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .panel.mon10 {
+    width: 134vw;
+    height: 480px;
+    transform-origin: top left;
+    transform: scale(0.75);
+  }
+
+  .panel.demo {
+    top: 360px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 360px);
+    overflow-y: auto;
+  }
+
+}

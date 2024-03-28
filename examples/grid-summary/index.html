@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="10 / CODEPLAY gridSummary() example" />
+  <title>Example : gridSummary()</title>
+  <style>
+    body,html {margin:0;padding:0;overscroll-behavior-x:none;-webkit-tap-highlight-color:transparent}
+    body {min-height:100vh;min-height:-webkit-fill-available}
+    html {height:-webkit-fill-available}
+  </style>
+
+  <!-- example script -->
+  <script src="mon10-codeplay-example-grid-summary.js"></script>
+
+  <!-- madeofnumbers.com/10 Mon10 object -->
+  <script src="https://madeofnumbers.com/10/mon10-latest.min.js"></script>
+
+  <script>
+
+    let mon10;
+
+    window.onload = () => {
+
+      // ===== create Mon10 object =====
+      mon10 = new Mon10(document.body);
+
+      // ===== after 2 seconds console.log result from gridSummary() ====
+      setTimeout(() => {
+        console.log(gridSummary());
+      }, 2000);
+    }
+
+  </script>
+</head>
+<body>
+</body>
