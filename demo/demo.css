@@ -28,6 +28,24 @@ p.small {
   line-height: 1rem;
 }
 
+ul {
+  margin: 0.125rem;
+  padding-left: 1rem;
+}
+
+ul.input {
+  list-style: disc;
+}
+
+ul.result {
+  list-style: circle;
+}
+
+ul em {
+  font-style: normal;
+  color: #888;
+}
+
 .panel {
   position: fixed;
   height: 100vh;
